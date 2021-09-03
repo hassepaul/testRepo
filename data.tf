@@ -1,6 +1,6 @@
 data "terraform_remote_state" "rg" {
     backend = "remote"
-    config {
+    config = {
         hostname = "app.terraform.io"
 	organization = "example-org-aba90f"
         workspaces {
